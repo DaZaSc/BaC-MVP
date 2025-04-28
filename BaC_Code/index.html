@@ -7,5 +7,24 @@
 <body>
     <h1>Welcome to BaC</h1>
     <p>This is the starting point for Betterward as Collaborators (MVP version).</p>
+
+    <h2>Begin Your Journey</h2>
+    <form id="intakeForm">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="lifeGoals">What are your major life goals?</label><br>
+        <textarea id="lifeGoals" name="lifeGoals" rows="4" cols="50"></textarea><br><br>
+
+        <label for="priorities">What are your top priorities right now?</label><br>
+        <textarea id="priorities" name="priorities" rows="4" cols="50"></textarea><br><br>
+
+        <label for="futurePlans">What do you plan for your future steps?</label><br>
+        <textarea id="futurePlans" name="futurePlans" rows="4" cols="50"></textarea><br><br>
+
+        <button type="button" onclick="saveIntake()">Save</button>
+    </form>
+
+    <script src="app.js"></script>
 </body>
 </html>
