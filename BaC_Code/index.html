@@ -2,28 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BaC MVP - Betterward as Collaborators</title>
+    <title>BaC - Betterward as Collaborators</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Welcome to BaC</h1>
-    <p>This is the starting point for Betterward as Collaborators (MVP version).</p>
 
-    <h2>Begin Your Journey</h2>
-    <form id="intakeForm">
-        <label for="name">Your Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
+    <section id="userIntake">
+        <h2>Begin Your Journey</h2>
+        <form id="intakeForm">
+            <input type="text" id="name" placeholder="Your Name"><br><br>
+            <textarea id="lifeGoals" placeholder="Major Life Goals"></textarea><br><br>
+            <textarea id="priorities" placeholder="Current Priorities"></textarea><br><br>
+            <textarea id="futurePlans" placeholder="Future Plans"></textarea><br><br>
+            <textarea id="values" placeholder="Your Key Values (Mutualism, etc.)"></textarea><br><br>
+            <button type="button" onclick="saveContext()">Save Context</button>
+        </form>
+    </section>
 
-        <label for="lifeGoals">What are your major life goals?</label><br>
-        <textarea id="lifeGoals" name="lifeGoals" rows="4" cols="50"></textarea><br><br>
-
-        <label for="priorities">What are your top priorities right now?</label><br>
-        <textarea id="priorities" name="priorities" rows="4" cols="50"></textarea><br><br>
-
-        <label for="futurePlans">What do you plan for your future steps?</label><br>
-        <textarea id="futurePlans" name="futurePlans" rows="4" cols="50"></textarea><br><br>
-
-        <button type="button" onclick="saveIntake()">Save</button>
-    </form>
+    <section id="proxyCreate">
+        <h2>Create a Proxy Advisor</h2>
+        <form id="proxyForm">
+            <input type="text" id="proxyName" placeholder="Proxy Name"><br><br>
+            <input type="text" id="proxyDimension" placeholder="Proxy Focus Area (e.g., Health, Creativity)"><br><br>
+            <button type="button" onclick="saveProxy()">Save Proxy</button>
+        </form>
+    </section>
 
     <script src="app.js"></script>
 </body>
